@@ -28,5 +28,5 @@ export const Sidebar = () => {
             <ul className="sidebar__projects"> {showProjects && <Projects />} </ul>
             { showProjects && <AddProject />}
         </div>
-    )
-}
+    );
+};
