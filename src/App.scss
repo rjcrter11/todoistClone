@@ -378,11 +378,22 @@ header {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      justify-content: space-between;
       cursor: pointer;
       line-height: 1.5;
-      font-size: 15px;
+      font-size: 16px;
       padding-left: 0;
       padding-right: 0;
+
+      &:nth-child(1) {
+        width: 25%;
+      }
+      &:nth-child(2) {
+        width: 26%;
+      }
+      &:nth-child(3) {
+        width: 42%;
+      }
 
       div:nth-child(1) {
         display: -webkit-box;
@@ -401,8 +412,8 @@ header {
           align-items: center;
 
           svg {
-            width: 18px;
-            height: 18px;
+            width: 25px;
+            height: 25px;
             color: #555;
           }
         }
