@@ -583,12 +583,24 @@ header {
     position: relative;
   }
 
-  &__project,
-  &__date {
-    cursor: pointer;
-    float: right;
-    color: gray;
-    margin: 20px 10px;
+  &__container {
+    width: 10%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    &__project,
+    &__date {
+      cursor: pointer;
+      float: right;
+      color: gray;
+      margin: 20px 10px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__project {
