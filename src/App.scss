@@ -135,11 +135,33 @@ $generic-bg: #db4c3f;
 /* Darkmode
   ============================================ */
 .darkmode {
+  background-color: #383838;
   header {
     -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
     background-color: #282828;
     border-color: transparent;
+  }
+
+  .sidebar {
+    background-color: #383838;
+    color: rgb(219, 219, 219);
+
+    ul,
+    li,
+    span,
+    h2 {
+      color: rgb(219, 219, 219);
+    }
+  }
+  .tasks {
+    background-color: #424242;
+    color: rgb(219, 219, 219);
+    ul,
+    li,
+    span {
+      color: rgb(219, 219, 219);
+    }
   }
 }
 
@@ -299,7 +321,7 @@ header {
     &.active,
     &:hover {
       font-weight: bold;
-      background-color: white;
+      //background-color: white;
     }
 
     &:nth-child(1) {
@@ -424,7 +446,7 @@ header {
       &.active,
       &:hover {
         font-weight: bold;
-        background-color: white;
+        // background-color: white;
       }
     }
   }
