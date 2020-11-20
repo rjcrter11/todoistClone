@@ -90,7 +90,7 @@ export const AddTask = ({
                         </>
                     )}
                     <ProjectOverlay setProject={setProject} showProjectOverlay={showProjectOverlay} setShowProjectOverlay={setShowProjectOverlay} />
-                    <TaskDate />
+                    <TaskDate setTaskDate={setTaskDate} showTaskDate={showTaskDate} setShowTaskDate={setShowTaskDate} />
                     <input
                         className="add-task__content"
                         data-testid="add-task-content"
@@ -122,19 +122,20 @@ export const AddTask = ({
                             )}
                         </div>
                         <div className="add-task__container" >
-                            <span
-                                className="add-task__project"
-                                data-testid="show-project-overlay"
-                                onClick={() => setShowProjectOverlay(!showProjectOverlay)}
-                            >
-                                <FaRegListAlt />
-                            </span>
+
                             <span
                                 className-="add-task__date"
                                 data-testid="show-task-date-overlay"
                                 onClick={() => setShowTaskDate(!showTaskDate)}
                             >
                                 <FaRegCalendarAlt />
+                            </span>
+                            <span
+                                className="add-task__project"
+                                data-testid="show-project-overlay"
+                                onClick={() => setShowProjectOverlay(!showProjectOverlay)}
+                            >
+                                <FaRegListAlt />
                             </span>
                         </div>
                     </div>
